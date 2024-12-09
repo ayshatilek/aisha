@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жиі қойылатын сұрақтар</title>
+    <link rel="stylesheet" href="bbb.css">
+    <style>
+        .faq-container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #1e1e1e; 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+        }
+
+        .faq-container h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #f9a825; 
+            text-transform: uppercase;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #444; 
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item h3 {
+            background-color: #3b3b3b; 
+            color: #f9a825; 
+            padding: 15px;
+            margin: 0;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-item h3:hover {
+            background-color: #555; 
+        }
+
+        .faq-item p {
+            display: none;
+            padding: 15px;
+            background-color: #2c2c2c; 
+            color: #ccc; 
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .faq-item.open p {
+            display: block;
+        }
+
+        .faq-item.open {
+            border-color: #f9a825;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Жиі қойылатын сұрақтар</h1>
+
+        <div class="faq-item">
+            <h3>Тапсырысты қалай бере аламын?</h3>
+            <p>Тапсырысты біздің сайт арқылы немесе телефонымызға хабарласып бере аласыз.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Жеткізу қанша уақыт алады?</h3>
+            <p>Жеткізу 2-5 жұмыс күні аралығында жүзеге асырылады.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Өнімді қайтаруға бола ма?</h3>
+            <p>Өнімнің жағдайы жақсы болса, оны 14 күн ішінде қайтаруға болады.</p>
+        </div>
+    </div>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.querySelector('h3').addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

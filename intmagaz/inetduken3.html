@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн дүкен</title>
+    <link rel="stylesheet" href="bbb.css">
+    <link rel="stylesheet" href="sharebtn.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="adaprespon.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header>
+        <div class="container">
+            <div class="store-name">
+                <h1>
+                    <i class="fas fa-gem"></i> Tūmar
+                </h1>
+                <p>Әр бұйым – нағыз қазына!</p>
+            </div>
+            <nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home">Басты бет</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#products">Өнімдер</a>
+                            <ul class="submenu">
+                                <li><a href="shekelikter.html">Шекеліктер</a></li>
+                                <li><a href="syrgalar.html">Сырғалар</a></li>
+                                <li><a href="belbau.html">Белбаулар</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#about">Біз туралы</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Байланыс</a>
+                        </li>
+                    </ul>
+                </nav>                
+        </div>
+    </header>
+
+    <button class="buttoncss1" class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()" >&#9776;</button>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <button class="buttoncss" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large"></button>      
+    <h2>Tumar</h2>
+    <button onclick="closeLeftMenu()"></button>
+  </div>
+  <ul class="sidebar-links">
+    <h4>Menu</h4>
+    <div class="menu-separator"></div>
+    <li><a href="pikir.html">Reviews</a></li>
+    <li><a href="suraq.html">Questions</a></li>
+    <li><a href="#">New products</a></li>
+  </ul>
+</div>
+
+      
+      <script>
+function openLeftMenu() {
+  const menu = document.getElementById("leftMenu");
+  menu.classList.add("open");
+}
+
+function closeLeftMenu() {
+  const menu = document.getElementById("leftMenu");
+  menu.classList.remove("open");
+}
+
+document.getElementById("leftMenu").addEventListener("mouseleave", () => {
+  closeLeftMenu();
+});
+
+document.querySelector(".menu-button").addEventListener("click", openLeftMenu);
+      </script>
+      
+   
+    <div class="margin">
+    <main>
+        <section id="home" class="container highlights-section">
+            <h2>Біздің ерекше ұсыныстарымыз</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Бүгінгі ұсыныстар</h3>
+                    <p>Арнайы өнімдерге 30%-ға дейін жеңілдіктер. Уақытыңызды жіберіп алмаңыз!</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Тегін жеткізу</h3>
+                    <p>10 000 ₸ және одан жоғары сомаға сатып алсаңыз, Қазақстан бойынша тегін жеткізу.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Жеңілдіктер</h3>
+                    <p>Көбірек сатып алсаңыз, көбірек үнемдейсіз. Ерекше ұсыныстарымызды қараңыз!</p>
+                </div>
+            </div>
+        </section>              
+                 
+        <section id="products" class="container">
+            <h2>Біздің өнімдер</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-19-13.jpg" alt="Өнім 1">
+                    <h3>Шекелік "ARIA"</h3>
+                    <p>3 000 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-20-03.jpg" alt="Өнім 2">
+                    <h3>Белбау "Sana"</h3>
+                    <p>5 000 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-21-29.jpg" alt="Өнім 3">
+                    <h3>Сырға "Su'lu"</h3>
+                    <p>3 500 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Downloads\Telegram Desktop\photo_2024-12-02_12-22-11.jpg" alt="Өнім 4">
+                    <h3>Бесбілезік "Minimal"</h3>
+                    <p>3 000 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-31-20.jpg" alt="Өнім 5">
+                    <h3>Шашбау</h3>
+                    <p>3 000 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-28-40.jpg" alt="Өнім 6">
+                    <h3>Белбеу "Qalqam"</h3>
+                    <p>4 500 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-33-38.jpg" alt="Өнім 7">
+                    <h3>Брошь "Tolkyn" ашық күлгін түсті орамалмен</h3>
+                    <p>4 000 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-32-59.jpg" alt="Өнім 8">
+                    <h3>Белбеу "Ala"</h3>
+                    <p>4 500 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-24_23-32-45.jpg" alt="Өнім 9">
+                    <h3>Ободок "Aray"</h3>
+                    <p>4 000 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Lenovo\Pictures\photo_2024-11-27_12-47-40.jpg" alt="Шекелік Zhana">
+                    <h3>Шекелік "Zhan Aru"</h3>
+                    <p>4 500 ₸</p>
+                    <button>Себетке қосу</button>
+                </div>
+            </div>
+        </section>        
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>Біз туралы</h2>
+                <p>Біздің дүкен – ұлттық әшекей-бұйымдар мен киімдердің бірегей үлгілерін ұсынып, мәдени мұраны сақтауға және таратуға ұмтылады.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-bullseye"></i> 
+                        <h3>Миссиямыз</h3>
+                        <p>Біз ұлттық шеберлікті әлемге танытып, сіздің ерекше стиліңізді қалыптастыруға көмектесеміз.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-history"></i> 
+                        <h3>Біздің тарих</h3>
+                        <p>Дәстүрлерден шабыт алып, заманауи стильмен үйлесімді тауарлар ұсынамыз.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Неге бізді таңдайды?</h3>
+                        <p>Сапалы өнім, адалдық және ұлттық нақыш – бізді ерекшелейтін қасиеттер.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact" class="form-section">
+        <h2>Бізбен байланысыңыз</h2>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Атыңыз:</label>
+                <input type="text" id="name" name="name" placeholder="Атыңызды енгізіңіз" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email адресіңізді енгізіңіз" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Хабарлама:</label>
+                <textarea id="message" name="message" placeholder="Хабарламаңызды жазыңыз" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Жіберу</button>
+        </form>
+    </section>
+    </div>
+    <ul class="menu bottomRight">
+        <li class="share top">
+          <i class="fa fa-share-alt"></i>
+          <ul class="submenu">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fa fa-brands fa-facebook"><ion-icon name="logo-facebook"></ion-icon></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fa fa-brands fa-twitter"><ion-icon name="logo-twitter"></ion-icon></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="googlePlus">
+                <i class="fa fa-brands fa-google-plus"><ion-icon name="logo-google"></ion-icon></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ayshatilek/profilecard/?igsh=MWhmNTd6Z293bDBvbA==" class="instagram">
+                <i class="fa fa-brands fa-instagram"><ion-icon name="logo-instagram"></ion-icon></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    <div class="loader-line"></div> 
+
+    <div class="footer-contact">
+        <h3>Байланыс</h3>
+        <ul>
+            <li>
+                <i class="fas fa-phone-alt"></i> 
+                <span>Телефон: +7 747 410 2007</span>
+            </li>
+            <li>
+                <i class="fas fa-envelope"></i> 
+                <span>Email: info@nationalshop.kz</span>
+            </li>
+            <li>
+                <i class="fas fa-map-marker-alt"></i> 
+                <span>Мекенжай: Алматы, Қазақстан</span>
+            </li>
+        </ul>
+    </div>   
+
+    <script>
+        function openLeftMenu() {
+      document.getElementById("leftMenu").style.display = "block";
+    }
+    
+    function closeLeftMenu() {
+      document.getElementById("leftMenu").style.display = "none";
+    }
+    
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
